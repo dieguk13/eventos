@@ -9,11 +9,18 @@
 </head>
 <body>
     <div id="eventos">
-        <button v-on:mouseEnter="sumarUno">Sumar Uno</button>
+        <div style="height: 300px;"
+        v-on:mousemove="mostrarUbicacion"
+        ></div>
+        x: {{ x }}, {{ y }}
+    
+        <!-- <button v-on:click="alerta ('Esta es la Alerta')">Mostrar Alerta</button> -->        
+     
+        <!--   <button v-on:mouseEnter="sumarUno">Sumar Uno</button>
         <button v-on:click="restarUno">Restar Uno</button>
         
         <hr>
-        {{ contador }}
+        {{ contador }} -->
     </div>
     <script src="vue.js"></script>
 </body>
